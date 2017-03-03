@@ -1,0 +1,25 @@
+[{
+    "id": "kea",
+    "lat": 55.706407,
+    "lng": 12.539141,
+    "navn": "Lygten 16 - KEA",
+    "txt": "Her starter selve løbet!",
+    "billede": "images/1.jpg"
+
+ }, {
+    "id": "lygten37",
+    "lat": 55.703934,
+    "lng": 12.537517,
+    "navn": "Lygten 37 - KEA IT",
+    "txt": "Næste stop på turen!",
+    "billede": "images/2.jpg"
+
+ }, {
+    "id": "fredagsbar",
+    "lat": 55.7063236,
+    "lng": 12.5387262,
+    "navn": "Moonbar - KEAs fredagsbar",
+    "txt": "Her kan nydes øl!",
+    "billede": "images/2.jpg"
+
+ }]
