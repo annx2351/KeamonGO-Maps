@@ -22,38 +22,28 @@ function initMap() {
         zoom: 16
     });
 
-    var infoWindow = new google.maps.InfoWindow({
-        map: map
+    var mig = new google.maps.Marker({
+
+        map: map,
+        icon: "images/dot.png"
     });
 
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var pos = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude,
+        navigator.geolocation.watchPosition(function (position) {
 
-            };
+            var minPos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            map.setCenter(pos);
-        }, function () {
-            handleLocationError(true, infoWindow, map.getCenter());
+            map.setCenter(minPos);
+            mig.setPosition(minPos);
+
+
+
         });
     } else {
-        // Browser doesn't support Geolocation
-        handleLocationError(false, infoWindow, map.getCenter());
+        alert("Geolocation NOT");
     }
-
 }
 
-
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-        'Error: The Geolocation service failed.' :
-        'Error: Your browser doesn\'t support geolocation.');
-}
 
 function visPunktInfo(sted) {
 
