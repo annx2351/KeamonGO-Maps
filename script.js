@@ -28,6 +28,17 @@ function initMap() {
         icon: "images/dot.png"
     });
 
+
+    var bounds = {
+        north: 55.71031791115429,
+        south: 55.70249569737543,
+        east: 12.54995566674802,
+        west: 12.528326333251925
+    }
+
+    var overlay = new google.maps.GroundOverlay("images/overlay-01.svg", bounds);
+    overlay.setMap(map);
+
     if (navigator.geolocation) {
         navigator.geolocation.watchPosition(function (position) {
 
@@ -56,7 +67,8 @@ function visPunktInfo(sted) {
     var m = new google.maps.Marker({
         position: ll,
         map: map,
-        animation: google.maps.Animation.DROP
+        animation: google.maps.Animation.DROP,
+        icon: "images/markericon.png"
     });
     var w = new google.maps.InfoWindow({
         maxWidth: 100

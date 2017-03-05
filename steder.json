@@ -2,7 +2,7 @@
     "id": "kea",
     "lat": 55.706407,
     "lng": 12.539141,
-    "navn": "Lygten 16 - KEA",
+    "navn": "Lygten 16 KEA",
     "txt": "Her starter selve løbet!",
     "billede": "images/1.jpg"
 
@@ -10,7 +10,7 @@
     "id": "lygten37",
     "lat": 55.703934,
     "lng": 12.537517,
-    "navn": "Lygten 37 - KEA IT",
+    "navn": "Lygten 37 KEA IT",
     "txt": "Næste stop på turen!",
     "billede": "images/2.jpg"
 
@@ -18,8 +18,24 @@
     "id": "fredagsbar",
     "lat": 55.7063236,
     "lng": 12.5387262,
-    "navn": "Moonbar - KEAs fredagsbar",
-    "txt": "Her kan nydes øl!",
-    "billede": "images/2.jpg"
+    "navn": "Moonbar KEAs fredagsbar",
+    "txt": "Her slutter turen, nyd en øl!",
+    "billede": "images/moonbar.jpg"
+
+ }, {
+    "id": "lidl",
+    "lat": 55.7062953,
+    "lng": 12.5382006,
+    "navn": "LIDL Indkøb",
+    "txt": "En af skolens nærliggende supermarkeder",
+    "billede": "images/lidl.jpg"
+
+ }, {
+    "id": "netto",
+    "lat": 55.7072362,
+    "lng": 12.5381364,
+    "navn": "Netto Indkøb",
+    "txt": "En af skolens nærliggende supermarkeder",
+    "billede": "images/netto.png"
 
  }]
